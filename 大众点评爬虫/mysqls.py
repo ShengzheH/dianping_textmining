@@ -8,7 +8,7 @@ Created on Tue Jul 24 15:45:05 2018
 import pymysql
 
 #连接MYSQL数据库
-db = pymysql.connect("localhost","root","","TESTDB" )
+db = pymysql.connect(host = "localhost",port=3306,user = "root",password= "password", database="TESTDB" )
 cursor = db.cursor()
 
 #在数据库建表
